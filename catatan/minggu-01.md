@@ -8,7 +8,7 @@ mengubah atau menambahkan code di core/src/main/java/id/ac/upb/asetpinjam/minggu
 (Apa yang Anda putuskan dan kenapa. Rujuk docs/asumsi.md bila perlu.)
 
 ## Kendala
-instalasi maven, karna harus setting dulu di windows agar jalan di laptop saya
+instalasi maven, karna harus setting dulu di windows agar bisa berjalan di laptop saya
 
 ## Penggunaan AI
 - Alat yang dipakai: Gemini pro
