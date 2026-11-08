@@ -32,4 +32,9 @@ public class Laptop extends Aset {
     public JenisAset getJenis() {
         return JenisAset.LAPTOP;
     }
+
+    @Override
+    public long hitungDenda(int hari) {
+        return super.hitungDenda(hari) * 2; 
+    }
 }

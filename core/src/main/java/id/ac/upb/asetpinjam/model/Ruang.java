@@ -24,4 +24,9 @@ public class Ruang extends Aset {
     public JenisAset getJenis() {
         return JenisAset.RUANG;
     }
+
+    @Override
+    public long hitungDenda(int hari) {
+        return super.hitungDenda(hari) * 1; 
+    }
 }

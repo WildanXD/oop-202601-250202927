@@ -20,11 +20,25 @@ public class KatalogAset {
 
     /** TODO minggu 4: aset yang namanya memuat kata (tanpa membedakan huruf besar/kecil). */
     public List<Aset> cari(String kata) {
-        throw new UnsupportedOperationException("TODO minggu 4: cari(String)");
+        List <Aset> hasil = new ArrayList<>();
+        String kataLower = kata.toLowerCase();
+        for (Aset aset : daftar) {
+            if (aset.getNama().toLowerCase().contains(kataLower)) {
+                hasil.add(aset);
+            }
+        }
+        return hasil;
     }
 
     /** TODO minggu 4: seperti cari(kata) tetapi hanya untuk jenis yang diminta (overloading). */
     public List<Aset> cari(String kata, JenisAset jenis) {
-        throw new UnsupportedOperationException("TODO minggu 4: cari(String, JenisAset)");
+        List <Aset> hasil = new ArrayList<>();
+        String kataLower = kata.toLowerCase();
+        for (Aset aset : semua()) {
+            if (aset.getNama().toLowerCase().contains(kataLower) && aset.getJenis() == jenis) {
+                hasil.add(aset);
+            }
+        }
+        return hasil;
     }
 }
