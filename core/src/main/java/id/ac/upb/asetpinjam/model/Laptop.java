@@ -35,6 +35,8 @@ public class Laptop extends Aset {
 
     @Override
     public long hitungDenda(int hari) {
-        return super.hitungDenda(hari) * 2; 
+        if (hari < 0) throw new IllegalArgumentException("Hari tidak boleh negatif");
+        if (hari == 0) return 0;
+        return (long) hari * id.ac.upb.asetpinjam.config.Varian.aktif().dendaPerHari * 2; 
     }
 }
